@@ -1,6 +1,5 @@
 package com.ejemplo.holamundo.controller;
 
-import jakarta.websocket.server.PathParam;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -20,6 +19,6 @@ public class HolaMundoController {
 
     @GetMapping("/saluda-query")
     public String saludaQueryString(@RequestParam("nombre") String nombre){
-        return "hola otro nombre "+nombre;
+        return "hola otro nombre 2"+nombre;
     }
 }
